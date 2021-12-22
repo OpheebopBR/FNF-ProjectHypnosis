@@ -9,8 +9,6 @@ Credits:
 * tposejank - Swap section note datas, Controller Support - https://github.com/ShadowMario/FNF-PsychEngine/pull/1610, https://github.com/ShadowMario/FNF-PsychEngine/pull/2229
 * Yoshubs - made Forever Engine, +Dad, bf-pixel and Senpai's Death Icons - https://github.com/Yoshubs/Forever-Engine-Legacy
 
-why "Amalgam"?, well, I have another project that i made with some friends called "Project Amalgam", it's a modpack for another mod called "Friday Night Funkin': Multiplayer",initially the modpack was a junction between other two modpacks, so in the end we decided to go with "Project Amalgam", this engine is pretty much the same thing, getting forks, smacking them into an base engine, and there we go!
-
 # Current Features
 
 ## Freeplay Icon Bump
