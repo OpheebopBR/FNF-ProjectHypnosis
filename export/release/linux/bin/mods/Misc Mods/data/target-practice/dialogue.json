@@ -1,0 +1,32 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "I see that you have experience, I kinda went easy on you.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		},
+		{
+			"expression": "talk",
+			"text": "boop beep, bap bap bop.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfwii"
+		},
+		{
+			"expression": "talk",
+			"text": "This used to be the final exam, are you ready for the challenge?",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		},
+		{
+			"expression": "talk",
+			"text": "bep",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfwii"
+		}
+	]
+}

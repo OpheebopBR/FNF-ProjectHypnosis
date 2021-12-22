@@ -1,0 +1,31 @@
+{
+	"songs": [
+		[
+			"focus",
+			"cj",
+			[
+				106,
+				73,
+				255
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"difficulties": "",
+	"weekCharacters": [
+		"ruby",
+		"cj",
+		""
+	],
+	"storyName": "",
+	"weekName": "Starlight Tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

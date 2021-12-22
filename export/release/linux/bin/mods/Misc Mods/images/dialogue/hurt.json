@@ -1,0 +1,24 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		160,
+		120
+	],
+	"scale": 1.5,
+	"animations": [
+		{
+			"anim": "talk",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_offsets": [
+				-1,
+				-11
+			],
+			"loop_name": "matt_portrait_animated",
+			"idle_name": "matt_portrait_animated"
+		}
+	],
+	"image": "matt hurt portrait"
+}

@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Well fought. You won fair and square."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bro you're weak bald man"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "...what?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "that was so easy, i'm barely breathing oh wait i forgo you cant breathe adsjhahfdsg;ouifadofuoaishdhoidsgpi"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "s",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "................................................................................................................."
+		}
+	]
+}

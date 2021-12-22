@@ -1,0 +1,69 @@
+{
+	"song": {
+		"speed": 2.4,
+		"stage": "festival",
+		"player1": "bf",
+		"player2": "cj",
+		"player3": null,
+		"events": [
+			[
+				300,
+				[
+					[
+						"Play Animation",
+						"here",
+						"dad"
+					]
+				]
+			],
+			[
+				1100,
+				[
+					[
+						"Play Animation",
+						"here",
+						"dad"
+					]
+				]
+			],
+			[
+				2100,
+				[
+					[
+						"Play Animation",
+						"here",
+						"dad"
+					]
+				]
+			],
+			[
+				2700,
+				[
+					[
+						"Play Animation",
+						"here",
+						"dad"
+					]
+				]
+			],
+			[
+				3900,
+				[
+					[
+						"Play Animation",
+						"singUP",
+						"bf"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 150,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "focus"
+	}
+}

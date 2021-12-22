@@ -1,0 +1,6 @@
+{
+	"name": "Starlight Mayhem Rebooted",
+	"description": "a Port of SM: Rebooted for Psych Engine 0.5.X and beyond!",
+	"restart":false,
+	"color": [170, 0, 255]
+}

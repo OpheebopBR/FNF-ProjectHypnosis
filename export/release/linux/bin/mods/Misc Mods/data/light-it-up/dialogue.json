@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "Welcome to the arena!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		},
+		{
+			"expression": "talk",
+			"text": "I'm here to train you today.",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		},
+		{
+			"expression": "talk",
+			"text": "Oh I see that you brought your girlfriend too!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		},
+		{
+			"expression": "talk",
+			"text": "beep!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfwii"
+		},
+		{
+			"expression": "talk",
+			"text": "Alright, let's start with a warm up, show me what you got!",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "matt"
+		}
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"songs": [
+		[
+			"war-of-honour",
+			"matt2",
+			[
+				255,
+				115,
+				0
+			]
+		],
+		[
+			"opponent",
+			"matt2",
+			[
+				255,
+				115,
+				0
+			]
+		],
+		[
+			"combat",
+			"matt2",
+			[
+				255,
+				115,
+				0
+			]
+		],
+		[
+			"endless-battle",
+			"",
+			[
+				0,
+				0,
+				0
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekCharacters": [
+		"matt",
+		"bf",
+		"gf"
+	],
+	"storyName": "this mod is sponsered by konosuba go buy the merch on crucnhyroll.c",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

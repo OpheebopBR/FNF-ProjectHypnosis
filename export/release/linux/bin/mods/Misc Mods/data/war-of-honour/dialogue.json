@@ -1,0 +1,39 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "fight",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You're back... again...?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep boop!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "fight",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "*sigh* I just finished a match... and I've got one in 2o minutes."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bleepis bloo!"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "fight",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You better make this quick."
+		}
+	]
+}

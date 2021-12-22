@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				50
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Matt TiredIdle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				29,
+				20
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Matt TiredLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Matt TiredDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				80
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Matt TiredUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				17
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Matt TiredRight",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/matt_tired",
+	"position": [
+		0,
+		290
+	],
+	"healthicon": "icon-matt",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		165,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

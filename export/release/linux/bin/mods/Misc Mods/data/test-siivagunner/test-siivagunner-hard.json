@@ -1,0 +1,213 @@
+{
+	"song": {
+		"player1": "bf",
+		"isMoody": false,
+		"player2": "bf-pixel-opponent",
+		"notes": [
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						779.2208,
+						5,
+						292.2078
+					],
+					[
+						1168.83118,
+						4,
+						292.2078
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						1558.44165,
+						5,
+						292.2078
+					],
+					[
+						1948.052,
+						4,
+						0
+					],
+					[
+						2142.85718,
+						7,
+						292.2078
+					],
+					[
+						2532.46753,
+						4,
+						292.2078
+					],
+					[
+						2922.078,
+						5,
+						487.013
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						3506.49365,
+						4,
+						292.2078
+					],
+					[
+						3896.104,
+						6,
+						292.2078
+					],
+					[
+						4285.71436,
+						4,
+						292.2078
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						4675.32471,
+						5,
+						292.2078
+					],
+					[
+						5064.935,
+						7,
+						0
+					],
+					[
+						5259.74,
+						4,
+						292.2078
+					],
+					[
+						5649.35059,
+						6,
+						292.2078
+					],
+					[
+						6038.961,
+						5,
+						1266.23376
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						7402.59766,
+						6,
+						292.2078
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						7792.208,
+						6,
+						292.2078
+					],
+					[
+						8181.81836,
+						4,
+						0
+					],
+					[
+						8376.624,
+						7,
+						487.013
+					],
+					[
+						8961.039,
+						5,
+						292.2078
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"lengthInSteps": 16,
+				"sectionNotes": [
+					[
+						9350.649,
+						7,
+						292.2078
+					],
+					[
+						9740.26,
+						5,
+						292.2078
+					],
+					[
+						10129.87,
+						4,
+						292.2078
+					],
+					[
+						10519.48,
+						6,
+						1655.84424
+					]
+				],
+				"mustHitSection": false
+			},
+			{
+				"altAnimNum": 0,
+				"sectionNotes": [],
+				"typeOfSection": 0,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"mustHitSection": true,
+				"changeBPM": false,
+				"bpm": 154
+			},
+			{
+				"gfSection": false,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 154,
+				"changeBPM": false,
+				"mustHitSection": true
+			},
+			{
+				"gfSection": false,
+				"lengthInSteps": 16,
+				"altAnim": false,
+				"typeOfSection": 0,
+				"sectionNotes": [],
+				"bpm": 154,
+				"changeBPM": false,
+				"mustHitSection": true
+			}
+		],
+		"player3": "gf",
+		"isHey": false,
+		"cutsceneType": "none",
+		"isSpooky": false,
+		"song": "Test SiIvagunner",
+		"validScore": true,
+		"stage": "stage",
+		"needsVoices": false,
+		"uiType": "normal",
+		"speed": 2.3,
+		"bpm": 154,
+		"gf": "gf"
+	}
+}

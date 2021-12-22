@@ -1,0 +1,46 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i was joking bro stop"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Please stop talking."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I'm getting so sick of you. When will this end?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "This is an endless battle. I can't win either way."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "You'll just keep on coming back."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "hurt",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Maybe if I try hard enough, you'll finally stop."
+		}
+	]
+}

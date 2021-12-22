@@ -1,0 +1,85 @@
+{
+	"storyName": "",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"hit-em-like-this",
+			"retro",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"complex-comedy",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"bopeebo-beta-mix",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"dad-battle-in-game-version",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"endless",
+			"lordx",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"test-siivagunner",
+			"bf-pixel",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"og-thorns",
+			"spirit",
+			[
+				255,
+				13,
+				73
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Custom Week"
+}

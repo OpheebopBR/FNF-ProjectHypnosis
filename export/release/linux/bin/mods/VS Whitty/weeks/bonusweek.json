@@ -1,0 +1,48 @@
+{
+	"storyName": "Back Alley Blitz",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "week7",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"LO FIGHT",
+			"whitty",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"OVERHEAD",
+			"whitty",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"BALLISTIC",
+			"whittymad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "bonusweek"
+}

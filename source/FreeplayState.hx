@@ -99,7 +99,7 @@ class FreeplayState extends MusicBeatState
 		}*/
 
 		#if PRELOAD_ALL
-		if (!curPlaying) Conductor.changeBPM(TitleState.titleJSON.bpm);
+		//if (!curPlaying) Conductor.changeBPM(TitleState.titleJSON.bpm);
 		#end
 
 		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));

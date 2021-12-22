@@ -1,0 +1,32 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.05,
+			"portrait": "mattbox",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "I assumed you left for good after that night."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mattbox",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Why the hell are you here?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfwii",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "beep ba skdoo bap"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "mattbox",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Let's start off easy, I wanna see if you still got it./"
+		}
+	]
+}
