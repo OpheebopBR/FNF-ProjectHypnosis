@@ -1,4 +1,4 @@
-# Friday Night Funkin' - Amalgam Engine!
+# Friday Night Funkin' - Project Hypnosis!
 a fork of Psych Engine which adds a bunch of features from Pull Requests around the Main Branch, and even other forks!
 Credits:
 * HiroMizuki - Pixel Note Splashes - https://github.com/ShadowMario/FNF-PsychEngine/pull/1792
