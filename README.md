@@ -11,9 +11,13 @@ Credits:
 
 # Current Features
 
-## Freeplay Icon Bump
+## Menu Animations and Freeplay Bump
 
-https://user-images.githubusercontent.com/45212377/146986463-d95e360c-8819-4c5d-9b77-48b4b14e6a81.mp4
+https://user-images.githubusercontent.com/45212377/147199518-663ddd81-288a-4228-8d75-6fa6bccbc378.mp4
+
+## Hit Sounds + Camera Follows the Arrow Direction
+
+https://user-images.githubusercontent.com/45212377/147199769-1146c459-1448-4b33-b0c4-63319513c49e.mp4
 
 ## Lane Underlay
 
