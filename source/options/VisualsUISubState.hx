@@ -92,6 +92,13 @@ class VisualsUISubState extends BaseOptionsMenu
 			false);
 		addOption(option); //yes this one is based on Forever Engine's info bar
 
+			var option:Option = new Option('Show Accuracy',
+			'If unchecked, Accuracy and Ratings will be hidden, showing only Score and Misses',
+			'accuracyDisplay',
+			'bool',
+			true);
+		addOption(option);
+
 
 			var option:Option = new Option('Health Bar Transparency',
 			'How much transparent should the health bar and icons be.',

@@ -2257,18 +2257,30 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
+		//Info Bars
+
+		//Default Info
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Rating: ?';
+			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ?';
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Combo Breaks: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
+			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 		
+		//Separate Accuracy and Ratings
 		if(ClientPrefs.foreverInfo)
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: 0%' + ' | Combo Breaks: ' + songMisses + ' | Rating: ?';
+			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: 0%' + ' | Misses: ' + songMisses + ' | Rating: ?';
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy:' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' [' + ratingFC + ']' + ' | Combo Breaks: ' + songMisses + ' | Rating:' +  ratingName;
+			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy:' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' [' + ratingFC + ']' + ' | Misses: ' + songMisses + ' | Rating:' +  ratingName;
 		}
+
+		//Hidden Accuracy
+		if(ClientPrefs.accuracyDisplay == false)
+			if(ratingName == '?') {
+				scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses;
+			} else {
+				scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses;
+			}
 
 		if(botplayTxt.visible) {
 			botplaySine += 180 * elapsed;

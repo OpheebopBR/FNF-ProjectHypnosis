@@ -25,6 +25,7 @@ class ClientPrefs {
 	public static var infoTextBorder:String = 'Outline';
 	public static var osuRatings:Bool = false;
 	public static var uiSkin:String = 'Default';
+	public static var accuracyDisplay:Bool = true;
 	public static var hideHud:Bool = false;
 	public static var noteOffset:Int = 0;
 	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
@@ -130,6 +131,7 @@ class ClientPrefs {
 		FlxG.save.data.osuRatings = osuRatings;
 		FlxG.save.data.timeBarType = timeBarType;
 		FlxG.save.data.uiSkin = uiSkin;
+		FlxG.save.data.accuracyDisplay = accuracyDisplay;
 		FlxG.save.data.scoreZoom = scoreZoom;
 		FlxG.save.data.noReset = noReset;
 		FlxG.save.data.healthBarAlpha = healthBarAlpha;
@@ -234,6 +236,9 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.uiSkin != null) {
 			uiSkin = FlxG.save.data.uiSkin;
+		}
+		if(FlxG.save.data.accuracyDisplay != null) {
+			accuracyDisplay = FlxG.save.data.accuracyDisplay;
 		}
 		if(FlxG.save.data.timeBarType != null) {
 			timeBarType = FlxG.save.data.timeBarType;
