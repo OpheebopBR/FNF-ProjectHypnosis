@@ -1056,17 +1056,19 @@ class PlayState extends MusicBeatState
 
 		//Watermarks during Songs
 
-		if(ClientPrefs.showWatermarks == true)
-		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString() + " | PH: v" + MainMenuState.projectHypnosisVersion + " | PE: v" + MainMenuState.psychEngineVersion, 16);
-		versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		versionTxt.scrollFactor.set();
-		add(versionTxt);
+		if(ClientPrefs.showWatermarks == true) {
+			versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString() + " | PH: v" + MainMenuState.projectHypnosisVersion + " | PE: v" + MainMenuState.psychEngineVersion, 16);
+			versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			versionTxt.scrollFactor.set();
+			add(versionTxt);
+		}
 
 		if(ClientPrefs.showWatermarks == false)
-		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString());
-		versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		versionTxt.scrollFactor.set();
-		add(versionTxt);
+			versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString());
+			versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			versionTxt.scrollFactor.set();
+			add(versionTxt);
+		
 
 		//Text Borders
 		if(ClientPrefs.infoTextBorder == 'Outline') scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
