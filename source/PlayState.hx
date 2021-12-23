@@ -3086,13 +3086,26 @@ class PlayState extends MusicBeatState
 	}
 
 	var cameraTwn:FlxTween;
-	public function moveCamera(isDad:Bool)
-	{
-		if(isDad)
-		{
+	public function moveCamera(isDad:Bool, ?direction:String = null) {
+		if (ClientPrefs.moveCameraInNoteDirection && direction == null) return;
+		var noteHitX:Float = 0;
+		var noteHitY:Float = 0;
+		if (ClientPrefs.moveCameraInNoteDirection) {
+			switch (direction) {
+				case 'singUP':
+					noteHitY -= 80;
+				case 'singDOWN':
+					noteHitY += 80;
+				case 'singLEFT':
+					noteHitX -= 80;
+				case 'singRIGHT':
+					noteHitX += 80;
+			}
+		}
+		if(isDad) {
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
-			camFollow.x += dad.cameraPosition[0];
-			camFollow.y += dad.cameraPosition[1];
+			camFollow.x += dad.cameraPosition[0] + noteHitX;
+			camFollow.y += dad.cameraPosition[1] + noteHitY;
 			tweenCamIn();
 		}
 		else
@@ -3109,8 +3122,8 @@ class PlayState extends MusicBeatState
 					camFollow.x = boyfriend.getMidpoint().x - 200;
 					camFollow.y = boyfriend.getMidpoint().y - 200;
 			}
-			camFollow.x -= boyfriend.cameraPosition[0];
-			camFollow.y += boyfriend.cameraPosition[1];
+			camFollow.x -= boyfriend.cameraPosition[0] - noteHitX;
+			camFollow.y += boyfriend.cameraPosition[1] + noteHitY;
 
 			if (Paths.formatToSongPath(SONG.song) == 'tutorial' && cameraTwn == null && FlxG.camera.zoom != 1)
 			{
@@ -3915,6 +3928,9 @@ class PlayState extends MusicBeatState
 
 			char.playAnim(animToPlay, true);
 			char.holdTimer = 0;
+			if (ClientPrefs.moveCameraInNoteDirection)
+				moveCamera(true, animToPlay);
+
 		}
 
 		if (SONG.needsVoices)
@@ -3980,6 +3996,10 @@ class PlayState extends MusicBeatState
 				if(note.noteType == 'Alt Animation') daAlt = '-alt';
 	
 				var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))];
+
+				if (ClientPrefs.moveCameraInNoteDirection)
+					moveCamera(false, animToPlay);
+
 
 				//if (note.isSustainNote){ wouldn't this be fun : P. i think it would be swell
 					
@@ -4047,6 +4067,8 @@ class PlayState extends MusicBeatState
 				notes.remove(note, true);
 				note.destroy();
 			}
+			if (ClientPrefs.playHitSounds)
+				FlxG.sound.play(Paths.sound('ChartingTick'));
 		}
 	}
 

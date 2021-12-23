@@ -70,6 +70,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 
+		var option:Option = new Option('Move Camera in Note Direction', 
+			"If checked, the camera will move in note's direction", 
+			'moveCameraInNoteDirection',
+			'bool', 
+			false);
+		addOption(option);
+
 		/*var option:Option = new Option('Note Delay',
 			'Changes how late a note is spawned.\nUseful for preventing audio lag from wireless earphones.',
 			'noteOffset',
@@ -80,6 +87,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.minValue = 0;
 		option.maxValue = 500;
 		addOption(option);*/
+
+		var option:Option = new Option('Enable Hit Sounds', 
+			"If checked, hitting a note will play a sound", 
+			'playHitSounds', 
+			'bool', 
+			false);
+		addOption(option);
 
 		var option:Option = new Option('Rating Offset',
 			'Changes how late/early you have to hit for a "Sick!"\nHigher values mean you have to hit later.',
