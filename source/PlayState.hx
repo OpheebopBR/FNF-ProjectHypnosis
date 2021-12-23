@@ -2266,7 +2266,7 @@ class PlayState extends MusicBeatState
 			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 		
-		//Separate Accuracy and Ratings
+		//Separate Accuracy from Ratings
 		if(ClientPrefs.foreverInfo)
 		if(ratingName == '?') {
 			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: 0%' + ' | Misses: ' + songMisses + ' | Rating: ?';
