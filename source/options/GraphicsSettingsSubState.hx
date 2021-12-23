@@ -48,7 +48,7 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 		"Pretty self explanatory, isn't it?",
 		'framerate',
 		'int',
-		60);
+		120);
 	addOption(option);
 		option.minValue = 60;
 		option.maxValue = 240;
