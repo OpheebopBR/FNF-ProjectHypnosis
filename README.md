@@ -21,14 +21,14 @@ https://user-images.githubusercontent.com/45212377/147199769-1146c459-1448-4b33-
 
 ## Lane Underlay
 
-![image](https://user-images.githubusercontent.com/45212377/146986404-477896a8-8682-4e49-9a19-a224c0dcee7d.png)
+![image](https://user-images.githubusercontent.com/45212377/147282896-42119cc1-95d2-431a-ab8b-91760cd89fcf.png)
 
 ## Max Optimiztion Mode
 wanna play some FNF but your pc can't run it without crashing every 10 seconds? don't worry, we got the solution!
 
 ![image](https://user-images.githubusercontent.com/45212377/146985503-2e3f50ce-364f-4bbb-98e0-acd59db96600.png)
 
-![image](https://user-images.githubusercontent.com/45212377/146985572-7b662626-863e-47f3-8a82-7f959566c32c.png)
+![image](https://user-images.githubusercontent.com/45212377/147282940-c81021ac-02ce-4ce7-a504-bdc3cbd51d38.png)
 
 this should be enough for any pc to run!
 
@@ -38,7 +38,7 @@ this should be enough for any pc to run!
 
 ![image](https://user-images.githubusercontent.com/45212377/146985347-52e5f1ec-7060-40e4-843a-6c5acb566ead.png)
 
-![image](https://user-images.githubusercontent.com/45212377/146985451-40b88603-ee86-40cc-9a5c-5f1643681c11.png)
+![image](https://user-images.githubusercontent.com/45212377/147283059-d8555266-2e55-4e5d-9979-dd316c7004e7.png)
 
 * S+ 	100% Accuracy.
 * S 	Over 95% Accuracy.
@@ -51,7 +51,7 @@ this should be enough for any pc to run!
 
 ## Pixel Note Splashes
 
-https://user-images.githubusercontent.com/45212377/146985811-5ec875be-beb4-4b2e-bafd-a88d7593758c.mp4
+https://user-images.githubusercontent.com/45212377/147283320-2cad2193-d1e9-42ee-b8d9-3ab4a267112b.mp4
 
 ## Swap Section Note Data
 
@@ -62,13 +62,13 @@ pretty self explanatory, this applies to both the Info Bar Text and Botplay Text
 ![image](https://user-images.githubusercontent.com/45212377/146986656-be657b6e-ab7a-463e-a561-20e7dc847865.png)
 
 (No Borders Enabled)
-![image](https://user-images.githubusercontent.com/45212377/146985955-73c16e00-d84f-4996-b271-4f39716fd210.png)
+![image](https://user-images.githubusercontent.com/45212377/147283197-656ea881-8650-4ecd-9be9-459001c8f7fa.png)
 
 ## UI Skins
 You can now Change your Judgements' Appearance with the new UI Skins
 
 ![image](https://user-images.githubusercontent.com/45212377/146613903-cc9dd497-d5cf-4e40-b435-210bc3d80f50.png)
-![image](https://user-images.githubusercontent.com/45212377/146986100-886ffe28-bc7b-4d26-b6c2-9ad6e768f2da.png)
+![image](https://user-images.githubusercontent.com/45212377/147283279-7609e5fe-4b4f-449a-a8be-c052362c1831.png)
 
 right now this feature is hardcoded, but I plan to make it softcoded soon
 
