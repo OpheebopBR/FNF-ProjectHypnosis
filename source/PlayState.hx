@@ -1,4 +1,4 @@
-	package;
+package;
 
 #if desktop
 import Discord.DiscordClient;
@@ -1046,6 +1046,7 @@ class PlayState extends MusicBeatState
 		add(iconP2);
 		reloadHealthBarColors();
 
+		//Info Bar Text
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
@@ -1053,9 +1054,16 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.hideHud;
 		add(scoreTxt);
 
-		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " +
-		CoolUtil.difficultyString() + " | Project Hypnosis " +
-		MainMenuState.projectHypnosisVersion, 16);
+		//Watermarks during Songs
+
+		if(ClientPrefs.showWatermarks == true)
+		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString() + " | PH: v" + MainMenuState.projectHypnosisVersion + " | PE: v" + MainMenuState.psychEngineVersion, 16);
+		versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionTxt.scrollFactor.set();
+		add(versionTxt);
+
+		if(ClientPrefs.showWatermarks == false)
+		versionTxt = new FlxText(0, FlxG.height - 24, 0, SONG.song + " - " + CoolUtil.difficultyString());
 		versionTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		versionTxt.scrollFactor.set();
 		add(versionTxt);
@@ -1076,7 +1084,7 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
-		//Text Borders
+		//Text Borders (for Botplay)
 		if(ClientPrefs.infoTextBorder == 'Outline') botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		if(ClientPrefs.infoTextBorder == 'Shadow') botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 		if(ClientPrefs.infoTextBorder == 'Outline Fast') botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE_FAST, FlxColor.BLACK);

@@ -99,6 +99,13 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
+			var option:Option = new Option('Show Watermarks',
+			'If unchecked, will hide Engine Watermarks during Songs',
+			'showWatermarks',
+			'bool',
+			false);
+		addOption(option);
+
 
 			var option:Option = new Option('Health Bar Transparency',
 			'How much transparent should the health bar and icons be.',
@@ -112,13 +119,13 @@ class VisualsUISubState extends BaseOptionsMenu
 			option.decimals = 1;
 		addOption(option);
 
-			var option:Option = new Option('Text Borders:',
-			"What should the Info Bar and Botplay Text Border look like?",
-			'infoTextBorder',
-			'string',
-			'Outline',
-			['Outline', 'Shadow', 'Outline Fast', 'None']);
-		addOption(option); //used the same code that was used on Time Bar bcs idk how to make unique code lol
+		var option:Option = new Option('Text Borders:',
+		"What should the Info Bar and Botplay Text Border look like?",
+		'infoTextBorder',
+		'string',
+		'Outline',
+		['Outline', 'Shadow', 'Outline Fast', 'None']);
+	addOption(option); //used the same code that was used on Time Bar bcs idk how to make unique code lol
 		
 		var option:Option = new Option('Lane Transparency',
 		"Change your lane underlay's transparency here",

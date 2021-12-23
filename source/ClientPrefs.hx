@@ -23,6 +23,7 @@ class ClientPrefs {
 	public static var camZooms:Bool = true;
 	public static var foreverInfo:Bool = false;
 	public static var infoTextBorder:String = 'Outline';
+	public static var showWatermarks:Bool = true;
 	public static var osuRatings:Bool = false;
 	public static var uiSkin:String = 'Default';
 	public static var accuracyDisplay:Bool = true;
@@ -123,6 +124,7 @@ class ClientPrefs {
 		FlxG.save.data.camZooms = camZooms;
 		FlxG.save.data.foreverInfo = foreverInfo;
 		FlxG.save.data.infoTextBorder = infoTextBorder;
+		FlxG.save.data.showWatermarks = showWatermarks;
 		FlxG.save.data.noteOffset = noteOffset;
 		FlxG.save.data.hideHud = hideHud;
 		FlxG.save.data.arrowHSV = arrowHSV;
@@ -214,6 +216,9 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.infoTextBorder != null) {
 			infoTextBorder = FlxG.save.data.infoTextBorder;
+		}
+		if(FlxG.save.data.showWatermarks != null) {
+			showWatermarks = FlxG.save.data.showWatermarks;
 		}
 		if(FlxG.save.data.hideHud != null) {
 			hideHud = FlxG.save.data.hideHud;
