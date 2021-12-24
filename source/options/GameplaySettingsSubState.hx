@@ -100,7 +100,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'playHitSounds',
 			'string',
 			'Disabled',
-			['Default', 'Softer', 'Bop', 'Tak', 'Tock', 'Tok', 'Disabled']);
+			['Default', 'Softer', 'Type 1', 'Type 2', 'Type 3', 'Type 4', 'Disabled']);
 		addOption(option);
 
 		var option:Option = new Option('Rating Offset',

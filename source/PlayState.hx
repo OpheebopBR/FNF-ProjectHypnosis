@@ -606,6 +606,11 @@ class PlayState extends MusicBeatState
 
 				var widShit = Std.int(bgSky.width * 6);
 
+				GameOverSubstate.deathSoundName = 'fnf_loss_sfx-pixel';
+				GameOverSubstate.loopSoundName = 'gameOver-pixel';
+				GameOverSubstate.endSoundName = 'gameOverEnd-pixel';
+				GameOverSubstate.characterName = 'bf-pixel-dead';
+
 				if(!ClientPrefs.lowQuality) {
 					var fgTrees:BGSprite = new BGSprite('weeb/weebTreesBack', repositionShit + 170, 130, 0.9, 0.9);
 					fgTrees.setGraphicSize(Std.int(widShit * 0.8));
@@ -4073,13 +4078,13 @@ class PlayState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('ChartingTick'));
 			if (ClientPrefs.playHitSounds == 'Softer')
 				FlxG.sound.play(Paths.sound('ChartingTickButSofter'));
-			if (ClientPrefs.playHitSounds == 'Bop')
+			if (ClientPrefs.playHitSounds == 'Type 1')
 				FlxG.sound.play(Paths.sound('LoudBop'));
-			if (ClientPrefs.playHitSounds == 'Tak')
+			if (ClientPrefs.playHitSounds == 'Type 2')
 				FlxG.sound.play(Paths.sound('Tak'));
-			if (ClientPrefs.playHitSounds == 'Tok')
+			if (ClientPrefs.playHitSounds == 'Type 3')
 				FlxG.sound.play(Paths.sound('Tok'));
-			if (ClientPrefs.playHitSounds == 'Tock')
+			if (ClientPrefs.playHitSounds == 'Type 4')
 				FlxG.sound.play(Paths.sound('Tock'));
 			if (ClientPrefs.playHitSounds == 'Disabled')
 				FlxG.sound.play(Paths.sound('nothing'));

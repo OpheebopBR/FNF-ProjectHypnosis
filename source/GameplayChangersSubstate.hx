@@ -39,9 +39,9 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 	function getOptions()
 	{
-		var option:GameplayOption = new GameplayOption('Scroll Speed', 'scrollspeed', 'float', 0.0);
+		var option:GameplayOption = new GameplayOption('Scroll Speed', 'scrollspeed', 'float', 0);
 		option.scrollSpeed = 1.5;
-		option.minValue = 0;
+		option.minValue = 0.0;
 		option.maxValue = 4;
 		option.changeValue = 0.1;
 		option.displayFormat = '%vX';
