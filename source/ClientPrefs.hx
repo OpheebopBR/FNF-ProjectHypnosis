@@ -48,8 +48,8 @@ class ClientPrefs {
 		'opponentplay' => false
 	];
 
-	public static var playMissAnimations:Bool = true;
-	public static var playHitSounds:Bool = false;
+	public static var playMissSounds:Bool = true;
+	public static var playHitSounds:String = 'Disabled';
 	public static var moveCameraInNoteDirection:Bool = false;
 
 	public static var comboOffset:Array<Int> = [0, 0, 0, 0];
@@ -152,7 +152,7 @@ class ClientPrefs {
 		FlxG.save.data.safeFrames = safeFrames;
 		FlxG.save.data.gameplaySettings = gameplaySettings;
 		FlxG.save.data.controllerMode = controllerMode;
-		FlxG.save.data.playMissAnimations = playMissAnimations;
+		FlxG.save.data.playMissSounds = playMissSounds;
 		FlxG.save.data.playHitSounds = playHitSounds;
 		FlxG.save.data.moveCameraInNoteDirection = moveCameraInNoteDirection;
 	
@@ -196,6 +196,9 @@ class ClientPrefs {
 		}
 		if (FlxG.save.data.playHitSounds != null) {
 			playHitSounds = FlxG.save.data.playHitSounds;
+		}
+		if (FlxG.save.data.playMissSounds != null) {
+			playMissSounds = FlxG.save.data.playMissSounds;
 		}
 		if (FlxG.save.data.moveCameraInNoteDirection != null) {
 			moveCameraInNoteDirection = FlxG.save.data.moveCameraInNoteDirection;

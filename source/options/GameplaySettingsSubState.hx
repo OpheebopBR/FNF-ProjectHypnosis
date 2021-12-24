@@ -70,6 +70,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			false);
 		addOption(option);
 
+		var option:Option = new Option('Miss Sounds',
+		"If unchecked, Miss Sounds will be disabled entirely",
+		'playMissSounds',
+		'bool',
+		true);
+	addOption(option);
+
 		var option:Option = new Option('Move Camera in Note Direction', 
 			"If checked, the camera will move in note's direction", 
 			'moveCameraInNoteDirection',
@@ -88,11 +95,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		option.maxValue = 500;
 		addOption(option);*/
 
-		var option:Option = new Option('Enable Hit Sounds', 
-			"If checked, hitting a note will play a sound", 
-			'playHitSounds', 
-			'bool', 
-			false);
+		var option:Option = new Option('Hit Sounds:', 
+			"If enabled, hitting a note will play a sound. You can also select which sound should be played.",
+			'playHitSounds',
+			'string',
+			'Disabled',
+			['Default', 'Softer', 'Bop', 'Tak', 'Tock', 'Tok', 'Disabled']);
 		addOption(option);
 
 		var option:Option = new Option('Rating Offset',

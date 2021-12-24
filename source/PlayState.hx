@@ -3404,8 +3404,8 @@ class PlayState extends MusicBeatState
 		switch (daRating)
 		{
 			case "shit": // shit
-			score = 50;
-				totalNotesHit += 0;
+				score = 50;
+				totalNotesHit += 0.25;
 				shits++;
 			case "bad": // bad
 				score = 100;
@@ -3881,6 +3881,7 @@ class PlayState extends MusicBeatState
 			totalPlayed++;
 			RecalculateRating();
 
+			if(ClientPrefs.playMissSounds == true)
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 			// FlxG.sound.play(Paths.sound('missnote1'), 1, false);
 			// FlxG.log.add('played imss note');
@@ -4067,8 +4068,21 @@ class PlayState extends MusicBeatState
 				notes.remove(note, true);
 				note.destroy();
 			}
-			if (ClientPrefs.playHitSounds)
+			//Hit Sound Types
+			if (ClientPrefs.playHitSounds == 'Default')
 				FlxG.sound.play(Paths.sound('ChartingTick'));
+			if (ClientPrefs.playHitSounds == 'Softer')
+				FlxG.sound.play(Paths.sound('ChartingTickButSofter'));
+			if (ClientPrefs.playHitSounds == 'Bop')
+				FlxG.sound.play(Paths.sound('LoudBop'));
+			if (ClientPrefs.playHitSounds == 'Tak')
+				FlxG.sound.play(Paths.sound('Tak'));
+			if (ClientPrefs.playHitSounds == 'Tok')
+				FlxG.sound.play(Paths.sound('Tok'));
+			if (ClientPrefs.playHitSounds == 'Tock')
+				FlxG.sound.play(Paths.sound('Tock'));
+			if (ClientPrefs.playHitSounds == 'Disabled')
+				FlxG.sound.play(Paths.sound('nothing'));
 		}
 	}
 
