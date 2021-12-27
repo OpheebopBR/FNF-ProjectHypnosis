@@ -77,6 +77,14 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		true);
 	addOption(option);
 
+		var Option = new Option('Light CPU Strums',
+		"If disabled, CPU Notes will no longer light once the CPU hits them",
+		'lightcpustrums',
+		'bool',
+		true);
+		addOption(Option);
+
+
 		var option:Option = new Option('Move Camera in Note Direction', 
 			"If checked, the camera will move in note's direction", 
 			'moveCameraInNoteDirection',

@@ -2322,26 +2322,27 @@ class PlayState extends MusicBeatState
 		//Info Bars
 
 		//Default Info
+		if(ClientPrefs.infoType == "Simple Info")
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ?';
+			scoreTxt.text = 'Score: ' + songScore + ' - Misses: ' + songMisses + ' - Rating: ?';
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses + ' | Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
+			scoreTxt.text = 'Score: ' + songScore + ' - Misses: ' + songMisses + ' - Rating: ' + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC;//peeps wanted no integer rating
 		}
 		
 		//Separate Accuracy from Ratings
-		if(ClientPrefs.foreverInfo)
+		if(ClientPrefs.infoType == "Detailed Info")
 		if(ratingName == '?') {
-			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy: 0%' + ' | Misses: ' + songMisses + ' | Rating: ?';
+			scoreTxt.text = 'Score: ' + songScore + ' - Accuracy: 0%' + ' - Misses: ' + songMisses + ' - Rating: ?';
 		} else {
-			scoreTxt.text = 'Score: ' + songScore + ' | Accuracy:' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' [' + ratingFC + ']' + ' | Misses: ' + songMisses + ' | Rating:' +  ratingName;
+			scoreTxt.text = 'Score: ' + songScore + ' - Accuracy:' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ' [' + ratingFC + ']' + ' - Misses: ' + songMisses + ' - Rating:' +  ratingName;
 		}
 
 		//Hidden Accuracy
-		if(ClientPrefs.accuracyDisplay == false)
+		if(ClientPrefs.infoType == "Minimal Info")
 			if(ratingName == '?') {
-				scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses;
+				scoreTxt.text = 'Score: ' + songScore + ' - Misses: ' + songMisses;
 			} else {
-				scoreTxt.text = 'Score: ' + songScore + ' | Misses: ' + songMisses;
+				scoreTxt.text = 'Score: ' + songScore + ' - Misses: ' + songMisses;
 			}
 
 		if(botplayTxt.visible) {
@@ -3993,8 +3994,10 @@ class PlayState extends MusicBeatState
 		if(note.isSustainNote && !note.animation.curAnim.name.endsWith('end')) {
 			time += 0.15;
 		}
-		StrumPlayAnim(true, Std.int(Math.abs(note.noteData)) % 4, time);
-		note.hitByOpponent = true;
+		if (ClientPrefs.lightcpustrums == true) {
+			StrumPlayAnim(true, Std.int(Math.abs(note.noteData)) % 4, time);
+			note.hitByOpponent = true;
+		}	
 
 		callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
 

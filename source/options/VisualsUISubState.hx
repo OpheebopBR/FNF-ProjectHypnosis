@@ -85,20 +85,6 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
-			var option:Option = new Option('Separate Accuracy from Rating',
-			'If checked, the game will \nShow Accuracy Percentage and Ratings in separate boxes on the Info Bar',
-			'foreverInfo',
-			'bool',
-			false);
-		addOption(option); //yes this one is based on Forever Engine's info bar
-
-			var option:Option = new Option('Show Accuracy',
-			'If unchecked, Accuracy and Ratings will be hidden, showing only Score and Misses',
-			'accuracyDisplay',
-			'bool',
-			true);
-		addOption(option);
-
 			var option:Option = new Option('Show Watermarks',
 			'If unchecked, will hide Engine Watermarks during Songs',
 			'showWatermarks',
@@ -119,13 +105,21 @@ class VisualsUISubState extends BaseOptionsMenu
 			option.decimals = 1;
 		addOption(option);
 
+		var option:Option = new Option('Info Type:',
+		"What should the Info Bar show? Simple shows Score, Misses and Ratings\nDetailed show Score, Misses, Ratings and Accuracy in separated Categories\nMinimal shows only Score and Misses",
+		'infoType',
+		'string',
+		'Simple Info',
+		['Simple Info', 'Detailed Info', 'Minimal Info']);
+	addOption(option);
+
 		var option:Option = new Option('Text Borders:',
 		"What should the Info Bar and Botplay Text Border look like?",
 		'infoTextBorder',
 		'string',
 		'Outline',
 		['Outline', 'Shadow', 'Outline Fast', 'None']);
-	addOption(option); //used the same code that was used on Time Bar bcs idk how to make unique code lol
+	addOption(option); 
 		
 		var option:Option = new Option('Lane Transparency',
 		"Change your lane underlay's transparency here",

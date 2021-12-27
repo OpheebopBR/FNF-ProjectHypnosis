@@ -21,12 +21,11 @@ class ClientPrefs {
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;
-	public static var foreverInfo:Bool = false;
 	public static var infoTextBorder:String = 'Outline';
+	public static var infoType:String = 'Simple Info';
 	public static var showWatermarks:Bool = true;
 	public static var osuRatings:Bool = false;
 	public static var uiSkin:String = 'Default';
-	public static var accuracyDisplay:Bool = true;
 	public static var hideHud:Bool = false;
 	public static var noteOffset:Int = 0;
 	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
@@ -51,6 +50,7 @@ class ClientPrefs {
 	public static var playMissSounds:Bool = true;
 	public static var playHitSounds:String = 'Disabled';
 	public static var moveCameraInNoteDirection:Bool = false;
+	public static var lightcpustrums:Bool = true;
 
 	public static var comboOffset:Array<Int> = [0, 0, 0, 0];
 	public static var keSustains:Bool = false; //i was bored, okay?
@@ -126,7 +126,6 @@ class ClientPrefs {
 		//FlxG.save.data.cursing = cursing;
 		//FlxG.save.data.violence = violence;
 		FlxG.save.data.camZooms = camZooms;
-		FlxG.save.data.foreverInfo = foreverInfo;
 		FlxG.save.data.infoTextBorder = infoTextBorder;
 		FlxG.save.data.showWatermarks = showWatermarks;
 		FlxG.save.data.noteOffset = noteOffset;
@@ -137,7 +136,7 @@ class ClientPrefs {
 		FlxG.save.data.osuRatings = osuRatings;
 		FlxG.save.data.timeBarType = timeBarType;
 		FlxG.save.data.uiSkin = uiSkin;
-		FlxG.save.data.accuracyDisplay = accuracyDisplay;
+		FlxG.save.data.infoType = infoType;
 		FlxG.save.data.scoreZoom = scoreZoom;
 		FlxG.save.data.noReset = noReset;
 		FlxG.save.data.healthBarAlpha = healthBarAlpha;
@@ -155,6 +154,7 @@ class ClientPrefs {
 		FlxG.save.data.playMissSounds = playMissSounds;
 		FlxG.save.data.playHitSounds = playHitSounds;
 		FlxG.save.data.moveCameraInNoteDirection = moveCameraInNoteDirection;
+		FlxG.save.data.lightcpustrums = lightcpustrums;
 	
 		FlxG.save.flush();
 
@@ -203,6 +203,9 @@ class ClientPrefs {
 		if (FlxG.save.data.moveCameraInNoteDirection != null) {
 			moveCameraInNoteDirection = FlxG.save.data.moveCameraInNoteDirection;
 		}
+		if (FlxG.save.data.lightcpustrums != null) {
+			lightcpustrums = FlxG.save.data.lightcpustrums;
+		}
 		
 		if(FlxG.save.data.framerate != null) {
 			framerate = FlxG.save.data.framerate;
@@ -226,9 +229,6 @@ class ClientPrefs {
 		}*/
 		if(FlxG.save.data.camZooms != null) {
 			camZooms = FlxG.save.data.camZooms;
-		}
-		if(FlxG.save.data.foreverInfo != null) {
-			foreverInfo = FlxG.save.data.foreverInfo;
 		}
 		if(FlxG.save.data.infoTextBorder != null) {
 			infoTextBorder = FlxG.save.data.infoTextBorder;
@@ -258,8 +258,8 @@ class ClientPrefs {
 		if(FlxG.save.data.uiSkin != null) {
 			uiSkin = FlxG.save.data.uiSkin;
 		}
-		if(FlxG.save.data.accuracyDisplay != null) {
-			accuracyDisplay = FlxG.save.data.accuracyDisplay;
+		if(FlxG.save.data.infoType != null) {
+			infoType = FlxG.save.data.infoType;
 		}
 		if(FlxG.save.data.timeBarType != null) {
 			timeBarType = FlxG.save.data.timeBarType;
