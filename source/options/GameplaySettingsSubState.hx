@@ -104,7 +104,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);*/
 
 		var option:Option = new Option('Hit Sounds:', 
-			"If enabled, hitting a note will play a sound. You can also select which sound should be played.",
+			"You can set your Hit Sound here.",
 			'playHitSounds',
 			'string',
 			'Disabled',
