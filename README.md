@@ -3,7 +3,7 @@ a fork of Psych Engine which adds a bunch of features from Pull Requests around 
 Credits:
 * HiroMizuki - Pixel Note Splashes - https://github.com/ShadowMario/FNF-PsychEngine/pull/1792
 * nintendofan44 - Lane Underlay - https://github.com/ShadowMario/FNF-PsychEngine/pull/1481
-* RafaelGiacom - Winning Icons - https://github.com/RafaelGiacom/Psych-Engine-Winning-Icons (dead link :c)
+* RafaelGiacom - Winning Icons - https://github.com/RafaelGiacom/Psych-Engine-Winning-Icons (its a dead link however)
 * Stilic - Freeplay Bump, Max Optimization - https://github.com/ShadowMario/FNF-PsychEngine/pull/1809
 * theDeutorist - Scroll Speed is no longer a multiplier - https://github.com/ShadowMario/FNF-PsychEngine/pull/2191
 * tposejank - Swap section note datas, Controller Support - https://github.com/ShadowMario/FNF-PsychEngine/pull/1610, https://github.com/ShadowMario/FNF-PsychEngine/pull/2229
