@@ -2,7 +2,7 @@
 a fork of Psych Engine which adds a bunch of features from Pull Requests around the Main Branch, and even other forks!
 Credits:
 * HiroMizuki - Pixel Note Splashes - https://github.com/ShadowMario/FNF-PsychEngine/pull/1792
-* l1ttleO - Made ProjectFNF 2.0, Miss Sounds Toggle, Camera Follows Note Direction - https://github.com/l1ttleO/ProjectFNF
+* l1ttleO - Made ProjectFNF 2.0, Menu Animations, Hit Sounds Miss Sounds Toggle, Camera Follows Note Direction - https://github.com/l1ttleO/ProjectFNF
 * nintendofan44 - Lane Underlay - https://github.com/ShadowMario/FNF-PsychEngine/pull/1481
 * RafaelGiacom - Winning Icons - https://github.com/RafaelGiacom/Psych-Engine-Winning-Icons (its a dead link however)
 * Stilic - Freeplay Bump, Max Optimization - https://github.com/ShadowMario/FNF-PsychEngine/pull/1809
