@@ -2128,14 +2128,15 @@ class PlayState extends MusicBeatState
 			paused = false;
 			callOnLuas('onResume', []);
 
+			//RPC only Updates if you pause mid-song then unpause, gonna try to fix it later :()
 			#if desktop
 			if (startTimer.finished)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName '(' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ')' + ' - ' ratingFC, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName '(' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ')' + ' - ' ratingFC, iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC, iconP2.getCharacter());
 			}
 			#end
 		}
@@ -2150,11 +2151,11 @@ class PlayState extends MusicBeatState
 		{
 			if (Conductor.songPosition > 0.0)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName '(' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ')' + ' - ' ratingFC, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName '(' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + ')' + ' - ' ratingFC, iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Rating: " + ratingName + ' (' + Highscore.floorDecimal(ratingPercent * 100, 2) + '%)' + ' - ' + ratingFC, iconP2.getCharacter());
 			}
 		}
 		#end
