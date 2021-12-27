@@ -2123,11 +2123,11 @@ class PlayState extends MusicBeatState
 			#if desktop
 			if (startTimer.finished)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Accuracy: " + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + " [" + ratingFC + "]" + " - Rating: " + ratingName, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Accuracy: " + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + " [" + ratingFC + "]" + " - Rating: " + ratingName, iconP2.getCharacter());
 			}
 			#end
 		}
@@ -2142,11 +2142,11 @@ class PlayState extends MusicBeatState
 		{
 			if (Conductor.songPosition > 0.0)
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Accuracy: " + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + " [" + ratingFC + "]" + " - Rating: " + ratingName, iconP2.getCharacter(), true, songLength - Conductor.songPosition - ClientPrefs.noteOffset);
 			}
 			else
 			{
-				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+				DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")" + " - Misses: " + songMisses + " - Accuracy: " + Highscore.floorDecimal(ratingPercent * 100, 2) + '%' + " [" + ratingFC + "]" + " - Rating: " + ratingName, iconP2.getCharacter());
 			}
 		}
 		#end
@@ -4587,7 +4587,7 @@ class PlayState extends MusicBeatState
 			}
 
 			// Rating FC
-			ratingFC = "";
+			ratingFC = "?";
 			if (sicks > 0) ratingFC = "SFC";
 			if (goods > 0) ratingFC = "GFC";
 			if (bads > 0 || shits > 0) ratingFC = "FC";
