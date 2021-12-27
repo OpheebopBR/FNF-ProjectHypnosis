@@ -2128,7 +2128,7 @@ class PlayState extends MusicBeatState
 			paused = false;
 			callOnLuas('onResume', []);
 
-			//RPC only Updates if you pause mid-song then unpause, gonna try to fix it later :()
+			//RPC only Updates if you pause mid-song then unpause, gonna try to fix it later :(
 			#if desktop
 			if (startTimer.finished)
 			{
